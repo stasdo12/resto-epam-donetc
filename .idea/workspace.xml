@@ -9,21 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd8bf2e5-22bd-4e95-b9f1-3ceb80119dda" name="Changes" comment="Create Entity, and ConnectionManager">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/DishDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/ReceiptDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/exception/DBException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/CartDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/CartDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/ConnectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/DBManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/entity/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/entity/Dish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/entity/Receipt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/entity/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/util/PropertiesUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/util/log4j2.xml" afterDir="false" />
+    <list default="true" id="bd8bf2e5-22bd-4e95-b9f1-3ceb80119dda" name="Changes" comment="Create DAO classes, and Exception">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/exception/AppException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/footer.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/head.jspf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mylib2.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/greeting.tag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -76,7 +74,20 @@
     ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sante\IdeaProjects\resto-epam-donetc\src\main\webapp\WEB-INF\jsp" />
+      <recent name="C:\Users\sante\IdeaProjects\resto-epam-donetc\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.69">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="resto-epam-donetc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.69" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.69" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -164,6 +175,15 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.69" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -174,7 +194,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671016396343</updated>
       <workItem from="1671016397727" duration="111000" />
-      <workItem from="1671016598838" duration="2172000" />
+      <workItem from="1671016598838" duration="3745000" />
     </task>
     <task id="LOCAL-00001" summary="Create Data Base">
       <created>1671017617112</created>
@@ -190,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671018383705</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create DAO classes, and Exception">
+      <created>1671018804014</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671018804014</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +237,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create Data Base" />
     <MESSAGE value="Create Entity, and ConnectionManager" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Entity, and ConnectionManager" />
+    <MESSAGE value="Create DAO classes, and Exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create DAO classes, and Exception" />
   </component>
 </project>
