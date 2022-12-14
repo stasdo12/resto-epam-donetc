@@ -1,6 +1,6 @@
-package database;
+package com.epam.donetc.restaurant.database;
 
-import util.PropertiesUtil;
+import com.epam.donetc.restaurant.util.PropertiesUtil;
 
 import java.lang.reflect.Proxy;
 import java.sql.Connection;

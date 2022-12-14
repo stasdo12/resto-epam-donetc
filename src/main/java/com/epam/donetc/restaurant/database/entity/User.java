@@ -1,4 +1,4 @@
-package entity;
+package com.epam.donetc.restaurant.database.entity;
 
 import java.io.Serializable;
 import java.util.Objects;

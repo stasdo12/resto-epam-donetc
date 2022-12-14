@@ -9,19 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd8bf2e5-22bd-4e95-b9f1-3ceb80119dda" name="Changes" comment="Create Data Base">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/database/ConnectionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/database/DBManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Dish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Receipt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/PropertiesUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="bd8bf2e5-22bd-4e95-b9f1-3ceb80119dda" name="Changes" comment="Create Entity, and ConnectionManager">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/DishDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/ReceiptDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/exception/DBException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/database/CartDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/CartDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/database/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/ConnectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/database/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/DBManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/entity/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/entity/Dish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/entity/Receipt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/entity/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/database/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/util/PropertiesUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/util/log4j2.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +174,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671016396343</updated>
       <workItem from="1671016397727" duration="111000" />
-      <workItem from="1671016598838" duration="1689000" />
+      <workItem from="1671016598838" duration="2172000" />
     </task>
     <task id="LOCAL-00001" summary="Create Data Base">
       <created>1671017617112</created>
@@ -181,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671017617112</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create Entity, and ConnectionManager">
+      <created>1671018383705</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671018383705</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +209,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create Data Base" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Data Base" />
+    <MESSAGE value="Create Entity, and ConnectionManager" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Entity, and ConnectionManager" />
   </component>
 </project>

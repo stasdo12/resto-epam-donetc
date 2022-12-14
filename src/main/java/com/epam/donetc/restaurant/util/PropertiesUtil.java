@@ -1,4 +1,4 @@
-package util;
+package com.epam.donetc.restaurant.util;
 
 import java.io.IOException;
 import java.util.Properties;

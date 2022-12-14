@@ -1,4 +1,4 @@
-package entity;
+package com.epam.donetc.restaurant.database.entity;
 
 public enum Status {
     NEW(1, "New"),

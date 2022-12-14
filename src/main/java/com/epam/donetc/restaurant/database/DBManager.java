@@ -1,4 +1,4 @@
-package database;
+package com.epam.donetc.restaurant.database;
 
 //language=PostgreSQL
 
