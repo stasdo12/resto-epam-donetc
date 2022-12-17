@@ -9,23 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd8bf2e5-22bd-4e95-b9f1-3ceb80119dda" name="Changes" comment="LoginServlet, footer and header">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/filters/AdminFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/filters/ClientFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/servlets/CartServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/servlets/ClientMenuServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/servlets/ClientOrdersServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/servlets/ManagerOrdersServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/servlets/SignupServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f6ccc59e-9bb0-496e-a087-81c34592ffb3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f6ccc59e-9bb0-496e-a087-81c34592ffb3.xml" afterDir="false" />
+    <list default="true" id="bd8bf2e5-22bd-4e95-b9f1-3ceb80119dda" name="Changes" comment="Create jsp pages for login and signUp">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/signup.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/head.jspf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/util/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/servlets/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/footer.jspf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/head.jspf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mylib2.tld" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,27 +48,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/TOMCAT/apache-tomcat-9.0.69",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.41264367"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/TOMCAT/apache-tomcat-9.0.69&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.41264367&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sante\IdeaProjects\resto-epam-donetc\src\main\webapp\WEB-INF" />
@@ -206,6 +195,7 @@
       <workItem from="1671016598838" duration="4257000" />
       <workItem from="1671021305236" duration="4111000" />
       <workItem from="1671025527997" duration="1384000" />
+      <workItem from="1671267484086" duration="3811000" />
     </task>
     <task id="LOCAL-00001" summary="Create Data Base">
       <created>1671017617112</created>
@@ -235,7 +225,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671020871607</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="AdminServlet, CartServlet, ClientMenuServlet, ClientOrdersServlet,&#10;ManagerOrdersServlet, SignupServlet">
+      <created>1671267685934</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671267685934</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Create Filter for Admin and Client">
+      <created>1671267757862</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671267757862</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +261,9 @@
     <MESSAGE value="Create Entity, and ConnectionManager" />
     <MESSAGE value="Create DAO classes, and Exception" />
     <MESSAGE value="LoginServlet, footer and header" />
-    <option name="LAST_COMMIT_MESSAGE" value="LoginServlet, footer and header" />
+    <MESSAGE value="AdminServlet, CartServlet, ClientMenuServlet, ClientOrdersServlet,&#10;ManagerOrdersServlet, SignupServlet" />
+    <MESSAGE value="Create Filter for Admin and Client" />
+    <MESSAGE value="Create jsp pages for login and signUp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create jsp pages for login and signUp" />
   </component>
 </project>
