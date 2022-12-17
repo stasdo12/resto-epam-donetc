@@ -21,7 +21,7 @@ public class ClientFilter extends HttpFilter {
         } else if (user.getRoleId() == 1) {
             res.sendRedirect(req.getContextPath() + "/menu");
         }else {
-            chain.doFilter(req,res);
+            chain.doFilter(req,res );
         }
     }
 }

@@ -21,7 +21,7 @@ public class AdminFilter extends HttpFilter {
         } else if (user.getRoleId() ==2) {
             res.sendRedirect(req.getContextPath()+ "/manageOrders");
         }else {
-            chain.doFilter(req, res);
+            chain.doFilter(req, res );
         }
     }
 }
