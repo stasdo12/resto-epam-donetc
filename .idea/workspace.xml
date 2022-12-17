@@ -2,25 +2,30 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="resto-epam-donetc:war" />
+      <artifact name="resto-epam-donetc:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd8bf2e5-22bd-4e95-b9f1-3ceb80119dda" name="Changes" comment="Create DAO classes, and Exception">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/exception/AppException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/footer.jspf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/head.jspf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mylib2.tld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/greeting.tag" afterDir="false" />
+    <list default="true" id="bd8bf2e5-22bd-4e95-b9f1-3ceb80119dda" name="Changes" comment="LoginServlet, footer and header">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/filters/AdminFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/filters/ClientFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/servlets/CartServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/servlets/ClientMenuServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/servlets/ClientOrdersServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/servlets/ManagerOrdersServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/servlets/SignupServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f6ccc59e-9bb0-496e-a087-81c34592ffb3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f6ccc59e-9bb0-496e-a087-81c34592ffb3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/util/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/epam/donetc/restaurant/servlets/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/footer.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/head.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mylib2.tld" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,13 +65,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/TOMCAT/apache-tomcat-9.0.69",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.41264367"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -76,8 +82,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\sante\IdeaProjects\resto-epam-donetc\src\main\webapp\WEB-INF\jsp" />
       <recent name="C:\Users\sante\IdeaProjects\resto-epam-donetc\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\sante\IdeaProjects\resto-epam-donetc\src\main\java\com\epam\donetc\restaurant" />
+      <recent name="C:\Users\sante\IdeaProjects\resto-epam-donetc\src\main\webapp\WEB-INF\jsp" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.69">
@@ -89,16 +96,17 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.69" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.69" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="resto-epam-donetc:war">
+        <artifact name="resto-epam-donetc:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/" />
+            <option name="CONTEXT_PATH" value="/resto_epam_donetc_war_exploded" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="bbb5221f-19be-459e-8f90-2a7f83b0bde3" />
+        <option name="BASE_DIRECTORY_NAME" value="a63f06a0-6563-4aa0-9593-2fd3e228bb9f" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -106,7 +114,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="53221" />
+        <option name="DEBUG_PORT" value="50757" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -171,8 +179,9 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="resto-epam-donetc:war" />
+          <artifact name="resto-epam-donetc:war exploded" />
         </option>
+        <option name="MakeProject" enabled="true" />
       </method>
     </configuration>
     <list>
@@ -194,7 +203,9 @@
       <option name="presentableId" value="Default" />
       <updated>1671016396343</updated>
       <workItem from="1671016397727" duration="111000" />
-      <workItem from="1671016598838" duration="3745000" />
+      <workItem from="1671016598838" duration="4257000" />
+      <workItem from="1671021305236" duration="4111000" />
+      <workItem from="1671025527997" duration="1384000" />
     </task>
     <task id="LOCAL-00001" summary="Create Data Base">
       <created>1671017617112</created>
@@ -217,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671018804014</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="LoginServlet, footer and header">
+      <created>1671020871607</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671020871607</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +256,7 @@
     <MESSAGE value="Create Data Base" />
     <MESSAGE value="Create Entity, and ConnectionManager" />
     <MESSAGE value="Create DAO classes, and Exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create DAO classes, and Exception" />
+    <MESSAGE value="LoginServlet, footer and header" />
+    <option name="LAST_COMMIT_MESSAGE" value="LoginServlet, footer and header" />
   </component>
 </project>

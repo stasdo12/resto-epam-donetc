@@ -1,4 +1,4 @@
-package servlets;
+package com.epam.donetc.restaurant.servlets;
 
 import com.epam.donetc.restaurant.database.UserDAO;
 import com.epam.donetc.restaurant.exception.AppException;
