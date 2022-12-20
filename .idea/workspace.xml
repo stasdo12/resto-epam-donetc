@@ -9,10 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd8bf2e5-22bd-4e95-b9f1-3ceb80119dda" name="Changes" comment="Create jsp pages for login and signUp">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client-menu.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/dish.jspf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jspf/head.jspf" afterDir="false" />
+    <list default="true" id="bd8bf2e5-22bd-4e95-b9f1-3ceb80119dda" name="Changes" comment="Create client-menu.jsp and dish.jspf(for display /menu )">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/client-orders.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/manager-orders.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +193,8 @@
       <workItem from="1671016598838" duration="4257000" />
       <workItem from="1671021305236" duration="4111000" />
       <workItem from="1671025527997" duration="1384000" />
-      <workItem from="1671267484086" duration="7553000" />
+      <workItem from="1671267484086" duration="9228000" />
+      <workItem from="1671433218103" duration="2976000" />
     </task>
     <task id="LOCAL-00001" summary="Create Data Base">
       <created>1671017617112</created>
@@ -245,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671271960717</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Create client-menu.jsp and dish.jspf(for display /menu )">
+      <created>1671279994393</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671279994393</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +277,7 @@
     <MESSAGE value="AdminServlet, CartServlet, ClientMenuServlet, ClientOrdersServlet,&#10;ManagerOrdersServlet, SignupServlet" />
     <MESSAGE value="Create Filter for Admin and Client" />
     <MESSAGE value="Create jsp pages for login and signUp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create jsp pages for login and signUp" />
+    <MESSAGE value="Create client-menu.jsp and dish.jspf(for display /menu )" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create client-menu.jsp and dish.jspf(for display /menu )" />
   </component>
 </project>
